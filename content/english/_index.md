@@ -1,51 +1,48 @@
 ---
 # Banner
 banner:
-  title: "Crescent 🌙"
-  content: "The Crescent Engine! B)"
+  title: "Crescent"
   image: "/images/banner.png"
+  content: "The Crescent Engine 🌙"
   button:
     enable: true
-    label: "Get Started For Free"
-    link: "https://github.com/zeon-studio/hugoplate"
+    label: "Github Repository"
+    link: "https://github.com/TheMagehawk/Crescent"
 
 # Features
 features:
-  - title: "What's Included in Hugoplate"
+  - title: "What does Crescent offer?"
     image: "/images/service-1.png"
-    content: "Hugoplate is a comprehensive starter template that includes everything you need to get started with your Hugo project. What's Included in Hugoplate"
+    content: "Crescent is a general-purpose Engine to develop fast and efficient Applications in a cross-platform fashion. Especially Games and computationally intensive workloads profit from its performance gains!"
     bulletpoints:
-      - "10+ Pre-build pages"
-      - "95+ Google Pagespeed Score"
-      - "Build with Hugo and TailwindCSS for easy and customizable styling"
-      - "Fully responsive on all devices"
-      - "SEO-optimized for better search engine rankings"
-      - "**Open-source and free** for personal and commercial use"
+      - "Develop various Applications and Games!"
+      - "All in one Suite"
     button:
-      enable: false
-      label: "Get Started Now"
-      link: "#"
+      enable: true
+      label: "Download now!"
+      link: "https://github.com/TheMagehawk/Crescent/releases/latest"
 
-  - title: "Discover the Key Features Of Hugo"
+  - title: "Discover the Key Features Of Crescent"
     image: "/images/service-2.png"
-    content: "Hugo is an all-in-one web framework for building fast, content-focused websites. It offers a range of exciting features for developers and website creators. Some of the key features are:"
+    content: "Crescent takes care of the backbone and you can completely focus on letting your creativity go wild! Here are some of Crescent's key features:"
     bulletpoints:
-      - "Zero JS, by default: No JavaScript runtime overhead to slow you down."
-      - "Customizable: Tailwind, MDX, and 100+ other integrations to choose from."
-      - "UI-agnostic: Supports React, Preact, Svelte, Vue, Solid, Lit and more."
+      - "It's cross-platform"
+      - "Highly configurable"
+      - "Efficient and intuitive"
     button:
       enable: true
       label: "Get Started Now"
-      link: "https://github.com/zeon-studio/hugoplate"
+      link: "https://github.com/TheMagehawk/Crescent/releases/latest"
 
-  - title: "The Top Reasons to Choose Hugo for Your Hugo Project"
+  - title: "Top sinco Reasons why to choose Crescent over other Engines"
     image: "/images/service-3.png"
-    content: "With Hugo, you can build modern and content-focused websites without sacrificing performance or ease of use."
+    content: "With all the Engines on the market, why did we work on Crescent? Main Reason: I wanted to work on a larger project with high complexicity and high reward. Here are five reasons why it's such an amazing idea:"
     bulletpoints:
-      - "Instantly load static sites for better user experience and SEO."
-      - "Intuitive syntax and support for popular frameworks make learning and using Hugo a breeze."
-      - "Use any front-end library or framework, or build custom components, for any project size."
-      - "Built on cutting-edge technology to keep your projects up-to-date with the latest web standards."
+      - "True"
+      - "True"
+      - "True"
+      - "True"
+      - "True"
     button:
       enable: false
       label: ""

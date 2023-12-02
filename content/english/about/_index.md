@@ -1,8 +1,8 @@
 ---
-title: "Hey, I am John Doe!"
+title: "About Crescent"
 meta_title: "About"
-description: "this is meta description"
-image: "/images/avatar.png"
+description: "About the Crescent Engine"
+image: "/images/logo-icon.png"
 draft: false
 ---
 
