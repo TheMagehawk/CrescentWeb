@@ -12,37 +12,38 @@ url = "about/"
 weight = 2
 
 [[main]]
-name = "Elements"
-url = "elements/"
+name = "Posts"
+url = "blog/"
 weight = 3
-
-[[main]]
-weight = 4
-name = "Pages"
 hasChildren = true
 
 [[main]]
-parent = "Pages"
-name = "Blog"
-url = "blog/"
-
-[[main]]
-parent = "Pages"
-name = "Contact"
-url = "contact/"
-
-[[main]]
-parent = "Pages"
-name = "Authors"
-url = "authors/"
-
-[[main]]
-parent = "Pages"
+parent = "Posts"
 name = "Categories"
 url = "categories/"
 
 [[main]]
-parent = "Pages"
+name = "Team"
+url = "authors/"
+weight = 4
+
+[[main]]
+name = "Contact"
+url = "contact/"
+weight = 5
+
+[[main]]
+weight = 6
+name = "Examples"
+hasChildren = true
+
+[[main]]
+parent = "Examples"
+name = "Elements"
+url = "elements/"
+
+[[main]]
+parent = "Examples"
 name = "404 Page"
 url = "404/"
 
@@ -54,11 +55,6 @@ url = "about/"
 weight = 1
 
 [[footer]]
-name = "Elements"
-url = "elements/"
-weight = 2
-
-[[footer]]
 name = "Privacy Policy"
 url = "privacy-policy/"
-weight = 3
+weight = 2
