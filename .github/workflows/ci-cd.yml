@@ -46,6 +46,10 @@ jobs:
         shell: sh
         run: npm install
 
+      - name: Clean old builds
+        shell: sh
+        run: npm run cleanBuild
+
       - name: Build Website
         shell: sh
         run: npm run build
