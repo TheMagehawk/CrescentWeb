@@ -20,6 +20,11 @@ testimonials:
     avatar: "/images/authors/yenaek/avatar.png"
     content: "Hi"
 
+  - name: "MuckiGG"
+    designation: "Player"
+    avatar: "/images/users/muckigg/avatar.png"
+    content: "Those cars look good! :)"
+
 # don't create a separate page
 _build:
   render: "never"
