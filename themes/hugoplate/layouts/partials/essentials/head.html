@@ -29,9 +29,9 @@
 
 
 <!-- google analytics -->
-{{ if and site.Config.Services.GoogleAnalytics.ID (ne site.Config.Services.GoogleAnalytics.ID "G-MEASUREMENT_ID") }}
+{{/*  {{ if and site.Config.Services.GoogleAnalytics.ID (ne site.Config.Services.GoogleAnalytics.ID "G-MEASUREMENT_ID") }}
   {{ template "_internal/google_analytics.html" . }}
-{{ end }}
+{{ end }}  */}}
 
 
 <!-- google tag manager -->
@@ -43,7 +43,7 @@
 
 
 <!-- matomo analytics -->
-{{/* {{ partialCached "matomo-analytics.html" . }} */}}
+{{ partialCached "matomo-analytics.html" . }}
 
 <!--  Baidu analytics -->
 {{/* {{ partialCached "baidu-analytics.html" . }} */}}
