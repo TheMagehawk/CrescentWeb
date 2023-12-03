@@ -18,7 +18,7 @@ testimonials:
   - name: "Yenaek"
     designation: "Developer"
     avatar: "/images/authors/yenaek/avatar.png"
-    content: "Your mother"
+    content: "Hi"
 
 # don't create a separate page
 _build:
