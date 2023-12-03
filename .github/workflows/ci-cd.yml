@@ -24,6 +24,20 @@ jobs:
       - name: Checkout Repo
         uses: actions/checkout@v3
 
+      # Cache Node Modules
+      - name: Cache Node Modules
+        id: CacheStep
+        uses: pat-s/always-upload-cache@v3.0.11
+        env:
+          cache-name: cache-node_modules-${{ runner.os }}
+        with:
+          path: ${{github.workspace}}/node_modules
+          key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('package.json') }}
+          restore-keys: |
+            ${{ runner.os }}-build-${{ env.cache-name }}-
+            ${{ runner.os }}-build-
+            ${{ runner.os }}-
+
       - name: Setup Project
         run: npm run project-setup
 
