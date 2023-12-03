@@ -13,6 +13,10 @@
   </head>
 
   <body>
+    <!-- Matomo Image Tracker-->
+    {{ partialCached "matomo-image-tracker.html" . }}
+    <!-- End Matomo -->
+
     <!-- cache partial only in production -->
     {{ if hugo.IsProduction }}
       {{ partialCached "preloader.html" . }}
