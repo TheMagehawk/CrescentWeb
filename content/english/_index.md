@@ -2,7 +2,7 @@
 # Banner
 banner:
   title: "Sparkling In the Night Sky"
-  image: "/images/banner.png"
+  image: "/images/banner.svg"
   content: "The Crescent Engine 🌙 ✨"
   button:
     enable: true
