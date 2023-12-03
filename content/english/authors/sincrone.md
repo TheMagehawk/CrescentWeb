@@ -17,4 +17,4 @@ social:
     link: mailto:sincrone@chicknfish.tech
 ---
 
-I play Lost Ark for a living :) Reminds me to work on the Engine and play Geometry Dash.
+He plays Lost Ark for a living 💀 Reminds me to work on the Engine and play Geometry Dash 🧊

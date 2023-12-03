@@ -13,4 +13,4 @@ social:
     link: mailto:yenaek@chicknfish.tech
 ---
 
-This dude wrote cool shit.
+This dude wrote nice build script 🤝
