@@ -39,10 +39,17 @@ jobs:
             ${{ runner.os }}-
 
       - name: Setup Project
+        shell: sh
         run: npm run project-setup
 
       - name: Install npm dependencies
+        shell: sh
         run: npm install
 
-      - name: Publish to GitHub Pages
+      - name: Build Website
+        shell: sh
         run: npm run build
+
+      - name: Copy Output to Website Root
+        shell: sh
+        run: rsync -avhW public ~/Projects/CrescentWebStorage/public/
