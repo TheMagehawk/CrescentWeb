@@ -56,4 +56,4 @@ jobs:
 
       - name: Copy Output to Website Root
         shell: sh
-        run: rsync -ah --verbose --update --delete --stats --progress --backup --backup-dir=~/Project/CrescentWebStorage/backup public ~/Projects/CrescentWebStorage/public
+        run: rsync -ah --verbose --delete --stats --progress --backup --backup-dir=~/Project/CrescentWebStorage/backup public/* ~/Projects/CrescentWebStorage/public
