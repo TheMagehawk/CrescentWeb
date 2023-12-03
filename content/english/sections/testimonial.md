@@ -25,11 +25,6 @@ testimonials:
     avatar: "/images/users/muckigg/avatar.png"
     content: "Those cars look good! :)"
 
-  - name: "MuckiGG"
-    designation: "Player"
-    avatar: "/images/users/muckigg/avatar.png"
-    content: "Those cars look good! :)"
-
 # don't create a separate page
 _build:
   render: "never"
