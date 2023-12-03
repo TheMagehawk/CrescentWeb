@@ -1,9 +1,9 @@
 ---
 # Banner
 banner:
-  title: "Crescent"
+  title: "Sparkling In the Night Sky"
   image: "/images/banner.png"
-  content: "The Crescent Engine 🌙"
+  content: "The Crescent Engine 🌙 ✨"
   button:
     enable: true
     label: "Github Repository"
@@ -34,12 +34,12 @@ features:
       label: "Get Started Now"
       link: "https://github.com/TheMagehawk/Crescent/releases/latest"
 
-  - title: "Top sinco Reasons why to choose Crescent over other Engines"
+  - title: "Top sinco Reasons why to choose Crescent"
     image: "/images/service-3.png"
     content: "With all the Engines on the market, why did we work on Crescent? Main Reason: I wanted to work on a larger project with high complexicity and high reward. Here are five reasons why it's such an amazing idea:"
     bulletpoints:
-      - "True"
-      - "True"
+      - "It's cool"
+      - ""
       - "True"
       - "True"
       - "True"
