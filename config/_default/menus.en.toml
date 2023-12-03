@@ -17,22 +17,17 @@ url = "blog/"
 weight = 3
 
 [[main]]
-name = "Categories"
-url = "categories/"
-weight = 4
-
-[[main]]
 name = "Team"
 url = "authors/"
-weight = 5
+weight = 4
 
 [[main]]
 name = "Contact"
 url = "contact/"
-weight = 6
+weight = 5
 
 [[main]]
-weight = 7
+weight = 6
 name = "Examples"
 hasChildren = true
 
@@ -46,6 +41,10 @@ parent = "Examples"
 name = "404 Page"
 url = "404/"
 
+[[main]]
+name = "Download"
+url = "https://github.com/TheMagehawk/Crescent/releases/latest"
+weight = 7
 
 # footer menu
 [[footer]]
