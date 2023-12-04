@@ -40,11 +40,11 @@ jobs:
           cache-name: cache-node_modules-${{ runner.os }}
         with:
           path: ${{github.workspace}}/node_modules
-          key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('package.json') }}
+          key: ${{ runner.name }}-build-${{ env.cache-name }}-${{ hashFiles('package.json') }}
           restore-keys: |
-            ${{ runner.os }}-build-${{ env.cache-name }}-
-            ${{ runner.os }}-build-
-            ${{ runner.os }}-
+            ${{ runner.name }}-build-${{ env.cache-name }}-
+            ${{ runner.name }}-build-
+            ${{ runner.name }}-
 
       - name: Setup Project
         shell: sh
