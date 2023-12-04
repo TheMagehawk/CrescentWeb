@@ -1,0 +1,63 @@
+name: DeployTest
+
+on:
+  push:
+    branches:
+      - '*'         # matches every branch that doesn't contain a '/'
+      - '*/*'       # matches every branch containing a single '/'
+      - '**'        # matches every branch
+      - '!master'   # excludes master
+  pull_request:
+    branches:
+      - '*'         # matches every branch that doesn't contain a '/'
+      - '*/*'       # matches every branch containing a single '/'
+      - '**'        # matches every branch
+      - '!master'   # excludes master
+
+# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Environment variables available to all jobs and steps in this workflow
+env:
+  HUGO_ENV: production
+
+jobs:
+  # Build job
+  build:
+    runs-on: [self-hosted, Linux, LinuxDeployTest]
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v3
+
+      # Cache Node Modules
+      - name: Cache Node Modules
+        id: CacheStep
+        uses: pat-s/always-upload-cache@v3.0.11
+        env:
+          cache-name: cache-node_modules-${{ runner.os }}
+        with:
+          path: ${{github.workspace}}/node_modules
+          key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('package.json') }}
+          restore-keys: |
+            ${{ runner.os }}-build-${{ env.cache-name }}-
+            ${{ runner.os }}-build-
+            ${{ runner.os }}-
+
+      - name: Setup Project
+        shell: sh
+        run: npm run project-setup
+
+      - name: Install npm dependencies
+        shell: sh
+        run: npm install
+
+      - name: Clean old builds
+        shell: sh
+        run: npm run cleanBuild
+
+      - name: Build Website
+        shell: sh
+        run: npm run build
