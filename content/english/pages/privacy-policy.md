@@ -34,12 +34,11 @@ This Privacy Statement applies to all information collected by or submitted to C
 
 Crescent uses the personal data you provide to:
 
-- identify and authenticate you;
-- answer your questions;
-- send you information;
-- for research activities, including the production of statistical reports (such aggregated information is not used to contact the subjects of the report);
-- send you surveys;
-- maintain our servers.
+- identify and authenticate you
+- answer your questions
+- send you information
+- for research activities, including the production of statistical reports (such aggregated information is not used to contact the subjects of the report)
+- send you surveys
 
 We also use this personal data to provide you with information related to your account and the educational materials, software and services you acquire from us, to better understand your needs and interests, to improve what we do for you and the public, to personalize communications, and to comply with or fulfill any contractual obligations to you. It is in Crescent’s legitimate business interests to provide you with the information, communications, and services you request; to create a public record of the data and content produced by Crescent’s services; and to maintain the integrity of that data and content for historical, scientific, and research purposes.
 
