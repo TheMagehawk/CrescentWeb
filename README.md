@@ -13,7 +13,7 @@
 
 The Official Crescent Engine Website 🌃⚔️🐉
 
-Visit the Website here: ![Crescent]("https://crescentengine.org")
+Visit the Website here: <a href="https://crescentengine.org">Crescent</a>
 
 ## 🔰 Setup
 
