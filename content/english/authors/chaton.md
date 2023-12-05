@@ -22,4 +22,4 @@ social:
 
 ---
 
-He makes cool music 🎹🎵🎶
+Composer and Producer
