@@ -8,6 +8,10 @@ social:
     icon: fa-brands fa-github
     link: https://github.com/TheMagehawk
 
+  - name: website
+    icon: fa-solid fa-globe
+    link: https://magehawk.net
+
   - name: email
     icon: fa-solid fa-envelope
     link: mailto:magehawk@chicknfish.tech
