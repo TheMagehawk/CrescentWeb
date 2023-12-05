@@ -18,4 +18,4 @@ social:
 
 ---
 
-This dude wrote nice build script 🤝
+Programmer

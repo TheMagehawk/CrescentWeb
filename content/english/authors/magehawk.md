@@ -13,4 +13,4 @@ social:
     link: mailto:magehawk@chicknfish.tech
 ---
 
-I wrote the Engine i guess lol
+Lead Programmer

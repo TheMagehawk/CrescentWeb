@@ -13,4 +13,4 @@ social:
     link: mailto:emptyshot@chicknfish.tech
 ---
 
-Very amazing 3D Designer 👍
+Graphic/Art Designer
