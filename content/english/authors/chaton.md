@@ -8,17 +8,13 @@ social:
     icon: fa-brands fa-github
     link: https://github.com/Ch4t0n
 
-  - name: bandcamp
-    icon: fa-brands fa-bandcamp
-    link: https://ch4t0nmusic.bandcamp.com
+  - name: music
+    icon: fa-solid fa-music
+    link: https://linktr.ee/Ch4t0n
 
   - name: youtube
     icon: fa-brands fa-youtube
     link: https://youtube.com/@Ch4t0n
-
-  - name: spotify
-    icon: fa-brands fa-spotify
-    link: https://open.spotify.com/artist/08Pt9bkfE0nTfsYi3pR4Wt?si=NnaXerd5Q1GjTS-xTBJLOg
 
   - name: email
     icon: fa-solid fa-envelope
