@@ -1,4 +1,5 @@
 import { defineConfig } from "tinacms";
+import Post from "./collections/post";
 
 // Your hosting provider likely exposes this as an environment variable
 const branch =
@@ -17,7 +18,7 @@ export default defineConfig({
 
   build: {
     outputFolder: "admin",
-    publicFolder: "static",
+    publicFolder: "public",
   },
   media: {
     tina: {
@@ -27,85 +28,7 @@ export default defineConfig({
   },
   // See docs on content modeling for more info on how to setup new content models: https://tina.io/docs/schema/
   schema: {
-    collections: [
-      {
-        name: "post",
-        label: "Posts",
-        path: "content/english/blog",
-        defaultItem: () => {
-          return {
-            // When a new post is created the title field will be set to "New post"
-            title: 'New Post',
-            body: {
-              type: 'root',
-              children: [
-                {
-                  type: 'p',
-                  children: [
-                    {
-                      type: 'text',
-                      text: 'Default Text',
-                    },
-                  ],
-                },
-              ],
-            },
-          }
-        },
-        fields: [
-          {
-            type: "string",
-            name: "title",
-            label: "Title",
-            isTitle: true,
-            required: true,
-          },
-          {
-            type: "string",
-            name: "meta_title",
-            label: "Meta Title",
-          },
-          {
-            type: "string",
-            name: "description",
-            label: "Description",
-          },
-          {
-            type: "datetime",
-            name: "date",
-            label: "Date",
-          },
-          {
-            type: "image",
-            name: "image",
-            label: "Image",
-          },
-          {
-            type: "string",
-            name: "categories",
-            label: "Categories",
-            list: true,
-          },
-          {
-            type: "string",
-            name: "author",
-            label: "Author",
-          },
-          {
-            type: "string",
-            name: "tags",
-            label: "Tags",
-            list: true,
-          },
-          {
-            type: "rich-text",
-            name: "body",
-            label: "Body",
-            isBody: true,
-          },
-        ],
-      },
-    ],
+    collections: [Post],
   },
   search: {
     tina: {
