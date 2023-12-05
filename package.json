@@ -1,9 +1,9 @@
 {
-  "name": "hugoplate",
-  "description": "hugo tailwindcss boilerplate",
-  "version": "1.9.5",
-  "license": "MIT",
-  "author": "zeon.studio",
+  "name": "crescent",
+  "description": "Crescent Engine Website",
+  "version": "0.1.0",
+  "license": "Apache-2.0",
+  "author": "Magehawk",
   "scripts": {
     "dev": "hugo server -D 1313",
     "build": "hugo --gc --minify --templateMetrics --templateMetricsHints --forceSyncStatic",
