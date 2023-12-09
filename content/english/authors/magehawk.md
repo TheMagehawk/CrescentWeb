@@ -17,4 +17,4 @@ social:
     link: mailto:magehawk@chicknfish.tech
 ---
 
-Lead Programmer
+Creator and Lead Programmer
