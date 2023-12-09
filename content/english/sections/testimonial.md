@@ -5,6 +5,12 @@ description: "The Engine is still very new and under heavy development, but we s
 
 # Testimonials
 testimonials:
+
+  - name: "Ch4t0n"
+    designation: "Music Artist"
+    avatar: "/images/authors/chaton/avatar.png"
+    content: "When NamelessGame?"
+
   - name: "SinCrone"
     designation: "Tester"
     avatar: "/images/authors/sincrone/avatar.png"
