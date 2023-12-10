@@ -28,18 +28,15 @@ weight = 5
 
 [[main]]
 weight = 6
-name = "Examples"
+name = "Contribute"
+url = "contribution"
 hasChildren = true
 
 [[main]]
-parent = "Examples"
-name = "Elements"
-url = "elements/"
-
-[[main]]
-parent = "Examples"
-name = "404 Page"
-url = "404/"
+weight = 7
+name = "Docs"
+url = "doc-main/"
+hasChildren = true
 
 [[main]]
 name = "Download"
