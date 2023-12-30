@@ -68,6 +68,19 @@
 </script>
 {{ end }}
 
+<!-- Matomo Tag Manager -->
+{{ if and site.Params.MATOMO_TAG_CONTAINER_ID (ne site.Params.MATOMO_TAG_CONTAINER_ID "MATOMO_TAG_CONTAINER_ID") }}
+<script>
+  var _mtm = window._mtm = window._mtm || [];
+  _mtm.push({'mtm.startTime': (new Date().getTime()), 'event': 'mtm.Start'});
+  (function() {
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.async=true; g.src='https://{{ site.Params.MATOMO_URL }}/js/container_{{ site.Params.MATOMO_TAG_CONTAINER_ID }}.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+{{ end }}
+<!-- End Matomo Tag Manager -->
+
 <!--  Baidu analytics -->
 {{/* {{ partialCached "baidu-analytics.html" . }} */}}
 
