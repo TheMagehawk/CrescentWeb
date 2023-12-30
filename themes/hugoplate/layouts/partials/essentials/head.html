@@ -35,15 +35,36 @@
 
 
 <!-- google tag manager -->
-{{/*  {{ partialCached "gtm.html" . }}  */}}
+{{ if and site.Params.GTM_ID (ne site.Params.GTM_ID "GTM-MEASUREMENT_ID") }}
+<link href="https://www.googletagmanager.com" rel="preconnect" crossorigin>
+<link rel="dns-prefetch" href="https://www.googletagmanager.com">
 
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','{{ site.Params.GTM_ID }}');
+</script>
+{{ end }}
 
 <!-- search index -->
 {{ partial "search-index.html" . }}
 
 
 <!-- matomo analytics -->
-{{ partialCached "matomo-analytics.html" . }}
+<script>
+  var _paq = window._paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="https://{{ site.Params.MATOMO_URL }}/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '1']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
 
 <!--  Baidu analytics -->
 {{/* {{ partialCached "baidu-analytics.html" . }} */}}

@@ -13,8 +13,12 @@
   </head>
 
   <body>
-    <!-- Matomo Image Tracker-->
+    <!-- Matomo Image Tracker -->
     {{ partialCached "matomo-image-tracker.html" . }}
+    <!-- End Matomo -->
+
+    <!-- Google Tag Manager -->
+    {{ partialCached "gtm-body.html" . }}
     <!-- End Matomo -->
 
     <!-- cache partial only in production -->
