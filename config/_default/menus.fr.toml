@@ -1,0 +1,55 @@
+############# English navigation ##############
+
+# main menu
+[[main]]
+name = "Accueil"
+url = "/"
+weight = 1
+
+[[main]]
+name = "À Propos"
+url = "about/"
+weight = 2
+
+[[main]]
+name = "Posts"
+url = "blog/"
+weight = 3
+
+[[main]]
+name = "Équipe"
+url = "authors/"
+weight = 4
+
+[[main]]
+name = "Contact"
+url = "contact/"
+weight = 5
+
+[[main]]
+weight = 6
+name = "Contribuer"
+url = "contribution"
+hasChildren = true
+
+[[main]]
+weight = 7
+name = "Docs"
+url = "doc-main/"
+hasChildren = true
+
+[[main]]
+name = "Télécharger"
+url = "https://github.com/TheMagehawk/Crescent/releases/latest"
+weight = 7
+
+# footer menu
+[[footer]]
+name = "À Propos"
+url = "about/"
+weight = 1
+
+[[footer]]
+name = "Privacy Policy"
+url = "privacy-policy/"
+weight = 2
