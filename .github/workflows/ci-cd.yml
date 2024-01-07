@@ -27,16 +27,12 @@ jobs:
       # Cache Node Modules
       - name: Cache Node Modules
         id: CacheStep
-        uses: pat-s/always-upload-cache@v3.0.11
+        uses: MasterworksIO/action-local-cache@2
         env:
           cache-name: cache-node_modules-${{ runner.os }}
         with:
           path: ${{github.workspace}}/node_modules
           key: ${{ runner.name }}-build-${{ env.cache-name }}-${{ hashFiles('package.json') }}
-          restore-keys: |
-            ${{ runner.name }}-build-${{ env.cache-name }}-
-            ${{ runner.name }}-build-
-            ${{ runner.name }}-
 
       - name: Setup Project
         shell: sh
